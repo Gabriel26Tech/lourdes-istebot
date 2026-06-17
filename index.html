@@ -184,15 +184,11 @@
       color: var(--lav-deep);
       font-weight: 500;
     }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 32px; height: 1px;
-      background: var(--lav-deep);
-    }
+    .hero-eyebrow::before { display: none; }
     .hero-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(42px, 5.5vw, 68px);
+      font-size: clamp(32px, 4.2vw, 56px);
+      white-space: nowrap;
       font-weight: 400;
       line-height: 1.1;
       color: var(--text-dark);
