@@ -131,14 +131,13 @@
       transition: color 0.2s;
     }
     nav a:hover { color: var(--lav-deep); }
-    .nav-logo img {
-      height: 40px;
-      width: auto;
-      object-fit: contain;
-      display: block;
-    }
-    @media (max-width: 768px) {
-      .nav-logo img { height: 36px; }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      font-style: italic;
+      color: var(--lav-deep);
+      letter-spacing: 0.08em;
+      font-weight: 400;
     }
     .nav-cta {
       background: var(--lav-btn);
@@ -876,7 +875,6 @@
       transform: none;
     }
   </style>
-  <link rel="icon" type="image/png" href="assets/images/logo%202.png">
 </head>
 <body>
 
@@ -892,7 +890,7 @@
   <nav>
     <a href="#servicios" class="nav-hide">Servicios</a>
     <a href="#sobre-mi" class="nav-hide">Historia</a>
-    <a class="nav-logo" href="#"><img src="assets/images/logo%202.png" alt="Lavande Centro Estético"></a>
+    <span class="nav-logo">Lourdes Istebot</span>
     <a href="#galeria" class="nav-hide">Galería</a>
     <a href="#contacto" class="nav-cta">Agendate</a>
   </nav>
