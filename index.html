@@ -494,8 +494,9 @@
     .servicios { padding: 120px 0; }
     .servicios-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 24px;
+      align-items: stretch;
     }
     .service-card {
       border-radius: 28px;
@@ -564,8 +565,8 @@
     @media (max-width: 900px) {
       .servicios-grid { grid-template-columns: 1fr 1fr; }
     }
-    @media (max-width: 600px) {
-      .servicios-grid { grid-template-columns: 1fr; }
+    @media (max-width: 480px) {
+      .servicios-grid { grid-template-columns: 1fr 1fr; }
     }
 
     /* ─── VALORES / PILARES ─── */
