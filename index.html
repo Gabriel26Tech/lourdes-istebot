@@ -387,10 +387,11 @@
       .hero-eyebrow, .hero-stats { justify-content: center; }
       .hero-actions { justify-content: center; }
       .hero-sub { max-width: 100%; }
-      .hero-visual { order: -1; width: 100%; max-width: 100%; overflow: hidden; }
-      .hero-photo-frame { width: min(300px, 85vw); max-width: 85vw; }
-      .hero-photo-bg { inset: -10px; }
-      .hero-badge { right: 4px; }
+      .hero-visual { order: -1; width: 100%; max-width: 100%; overflow: visible; padding-top: 20px; padding-bottom: 20px; }
+      .hero-photo-frame { width: min(280px, 80vw); max-width: 80vw; margin: 0 auto; }
+      .hero-photo { aspect-ratio: 4/5; border-radius: 44% 56% 42% 58% / 42% 52% 48% 58%; }
+      .hero-photo-bg { inset: -8px; border-radius: 44% 56% 42% 58% / 42% 52% 48% 58%; }
+      .hero-badge { bottom: 16px; right: 8px; padding: 8px 14px; }
       .hero-float-chip { left: 0; }
       .hero-title { font-size: clamp(28px, 8vw, 68px); white-space: nowrap; }
     }
