@@ -687,38 +687,10 @@
     .author-service { font-size: 11px; color: var(--warm-grey); letter-spacing: 0.08em; }
 
     @media (max-width: 768px) {
-      .testimonios-grid { display: none; }
+      .testimonios-grid { grid-template-columns: 1fr; }
       .testimonios { padding: 40px 0; }
       .testimonios .section-title { font-size: clamp(26px, 7vw, 36px); }
-      .testi-carousel { display: block; }
     }
-    .testi-carousel {
-      display: none;
-      position: relative;
-      overflow: hidden;
-    }
-    .testi-track {
-      display: flex;
-      transition: transform 0.4s ease;
-    }
-    .testi-track .testimonial-card {
-      min-width: 100%;
-      box-sizing: border-box;
-    }
-    .testi-dots {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 20px;
-    }
-    .testi-dots span {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--lav-mid);
-      transition: background 0.3s;
-      cursor: pointer;
-    }
-    .testi-dots span.active { background: var(--lav-btn); }
 
     /* ─── GALERÍA ─── */
     .galeria { padding: 60px 0 80px; }
@@ -1204,7 +1176,7 @@
         <div class="stars">★★★★★</div>
         <p class="testimonial-quote">"Lourdes es increíble. Fui por el acné y la diferencia fue visible desde la primera sesión. Más allá del resultado, el trato es simplemente especial."</p>
         <div class="testimonial-author">
-          <div class="author-avatar">👩</div>
+          <div class="author-avatar" style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--lav-soft),var(--lav-mid));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--lav-deep);border:1.5px solid rgba(196,174,222,0.4);flex-shrink:0;">M</div>
           <div>
             <div class="author-name">María G.</div>
             <div class="author-service">Tratamiento para acné</div>
@@ -1215,7 +1187,7 @@
         <div class="stars">★★★★★</div>
         <p class="testimonial-quote">"El drenaje linfático con Lourdes es el mejor que probé. Se nota la experiencia y la dedicación. Salís renovada completamente."</p>
         <div class="testimonial-author">
-          <div class="author-avatar">👩‍🦱</div>
+          <div class="author-avatar" style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--lav-soft),var(--lav-mid));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--lav-deep);border:1.5px solid rgba(196,174,222,0.4);flex-shrink:0;">V</div>
           <div>
             <div class="author-name">Valentina R.</div>
             <div class="author-service">Drenaje linfático</div>
@@ -1226,7 +1198,7 @@
         <div class="stars">★★★★★</div>
         <p class="testimonial-quote">"Nos acompañó a domicilio con mi mamá con una delicadeza y profesionalismo que pocas veces vi. La familia Istebot merece todo el reconocimiento."</p>
         <div class="testimonial-author">
-          <div class="author-avatar">👨</div>
+          <div class="author-avatar" style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--lav-soft),var(--lav-mid));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--lav-deep);border:1.5px solid rgba(196,174,222,0.4);flex-shrink:0;">C</div>
           <div>
             <div class="author-name">Carlos M.</div>
             <div class="author-service">Cuidados paliativos</div>
@@ -1265,21 +1237,6 @@
             <div class="author-service">Peeling — tratamiento de manchas</div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Carrusel mobile -->
-    <div class="testi-carousel" id="testiCarousel">
-      <div class="testi-track" id="testiTrack">
-        <div class="testimonial-card glass"><div class="stars">★★★★★</div><p class="testimonial-quote">"Lourdes es increíble. Fui por el acné y la diferencia fue visible desde la primera sesión. Más allá del resultado, el trato es simplemente especial."</p><div class="testimonial-author"><div class="author-avatar">👩</div><div><div class="author-name">María G.</div><div class="author-service">Tratamiento para acné</div></div></div></div>
-        <div class="testimonial-card glass"><div class="stars">★★★★★</div><p class="testimonial-quote">"El drenaje linfático con Lourdes es el mejor que probé. Se nota la experiencia y la dedicación. Salís renovada completamente."</p><div class="testimonial-author"><div class="author-avatar">👩‍🦱</div><div><div class="author-name">Valentina R.</div><div class="author-service">Drenaje linfático</div></div></div></div>
-        <div class="testimonial-card glass"><div class="stars">★★★★★</div><p class="testimonial-quote">"Nos acompañó a domicilio con mi mamá con una delicadeza y profesionalismo que pocas veces vi. La familia Istebot merece todo el reconocimiento."</p><div class="testimonial-author"><div class="author-avatar">👨</div><div><div class="author-name">Carlos M.</div><div class="author-service">Cuidados paliativos</div></div></div></div>
-        <div class="testimonial-card glass"><div class="stars">★★★★★</div><p class="testimonial-quote">"Me hice el tratamiento de radiofrecuencia y los resultados superaron mis expectativas. Lourdes explica cada paso, te hace sentir segura y el consultorio transmite una paz increíble."</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,var(--lav-soft),var(--lav-mid));color:var(--lav-dark);font-family:'Playfair Display',serif;font-size:18px;font-weight:500;display:flex;align-items:center;justify-content:center;">S</div><div><div class="author-name">Sofía L.</div><div class="author-service">Radiofrecuencia facial</div></div></div></div>
-        <div class="testimonial-card glass"><div class="stars">★★★★★</div><p class="testimonial-quote">"Me maquilló para mi casamiento y fue perfecto. Entendió exactamente lo que quería, me propuso ideas y el resultado fue natural y elegante. Todas me preguntaron quién me maquilló."</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,var(--lav-soft),var(--lav-mid));color:var(--lav-dark);font-family:'Playfair Display',serif;font-size:18px;font-weight:500;display:flex;align-items:center;justify-content:center;">R</div><div><div class="author-name">Romina P.</div><div class="author-service">Maquillaje de novia</div></div></div></div>
-        <div class="testimonial-card glass"><div class="stars">★★★★★</div><p class="testimonial-quote">"Hice varios peelings con Lourdes para tratar manchas. La constancia y el seguimiento que hace es de otro nivel. Me fue explicando el proceso y los cambios fueron reales y progresivos."</p><div class="testimonial-author"><div class="author-avatar" style="background:linear-gradient(135deg,var(--lav-soft),var(--lav-mid));color:var(--lav-dark);font-family:'Playfair Display',serif;font-size:18px;font-weight:500;display:flex;align-items:center;justify-content:center;">A</div><div><div class="author-name">Andrea F.</div><div class="author-service">Peeling — tratamiento de manchas</div></div></div></div>
-      </div>
-      <div class="testi-dots" id="testiDots">
-        <span class="active"></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
   </div>
@@ -1412,34 +1369,6 @@
     setTimeout(() => el.classList.add('visible'), 200 + i * 150);
   });
 </script>
-
-  <!-- Testimonios Carousel (mobile) -->
-  <script>
-    (function(){
-      var track = document.getElementById('testiTrack');
-      var dots = document.getElementById('testiDots');
-      if(!track) return;
-      var cards = track.querySelectorAll('.testimonial-card');
-      var dotSpans = dots.querySelectorAll('span');
-      var current = 0;
-      var paused = false;
-
-      function goTo(n) {
-        current = (n + cards.length) % cards.length;
-        track.style.transform = 'translateX(-' + (current * 100) + '%)';
-        dotSpans.forEach(function(d,i){ d.classList.toggle('active', i === current); });
-      }
-
-      var interval = setInterval(function(){ if(!paused) goTo(current + 1); }, 5000);
-
-      track.addEventListener('touchstart', function(){ paused = true; }, {passive:true});
-      track.addEventListener('touchend', function(){ paused = false; }, {passive:true});
-
-      dotSpans.forEach(function(dot, i){
-        dot.addEventListener('click', function(){ goTo(i); });
-      });
-    })();
-  </script>
 
   <!-- Hero Carousel -->
   <script>
