@@ -813,7 +813,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      background: #25D366;
+      background: var(--lav-btn);
       color: var(--white);
       padding: 16px 32px;
       border-radius: 999px;
@@ -825,7 +825,7 @@
       box-shadow: 0 8px 24px rgba(37,211,102,0.3);
       transition: background 0.2s, transform 0.15s;
     }
-    .btn-whatsapp:hover { background: #1db954; transform: translateY(-2px); }
+    .btn-whatsapp:hover { background: var(--lav-dark); transform: translateY(-2px); }
     .btn-whatsapp svg { width: 20px; height: 20px; fill: white; }
 
     .horarios-list { display: flex; flex-direction: column; gap: 10px; }
@@ -1246,8 +1246,8 @@
   <div class="container">
     <div class="contacto-inner">
       <div class="reveal">
-        <h2>Agendá tu<br/>consulta hoy</h2>
-        <p>Estoy en Trinidad, Flores, lista para recibirte. Escribime por WhatsApp y encontramos el horario que mejor te quede.</p>
+        <h2>Hablemos</h2>
+        <p>Estoy en Trinidad, Flores. Escribime por WhatsApp y te respondo a la brevedad.</p>
 
         <div class="contacto-data">
           <div class="contacto-row">
@@ -1264,31 +1264,11 @@
               <span>José Batlle 583, Trinidad, Flores, Uruguay</span>
             </div>
           </div>
-          <div class="contacto-row">
-            <div class="contacto-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lav-deep)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-            <div class="contacto-row-text">
-              <strong>Horarios</strong>
-              <div class="horarios-list" style="margin-top:8px;">
-                <div class="horario-row">
-                  <span class="horario-dia">Lunes – Viernes</span>
-                  <span class="horario-hora">9:00 – 19:00</span>
-                </div>
-                <div class="horario-row">
-                  <span class="horario-dia">Sábado</span>
-                  <span class="horario-hora">9:00 – 13:00</span>
-                </div>
-                <div class="horario-row">
-                  <span class="horario-dia">Domicilio</span>
-                  <span class="horario-hora">A coordinar</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="map-placeholder" style="margin-top:28px;">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.6!2d-57.524!3d-33.534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMyJzAyLjQiUyA1N8KwMzEnMjYuNCJX!5e0!3m2!1ses!2suy!4v1620000000000!5m2!1ses!2suy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.8!2d-57.5158!3d-33.5347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1ae7e1b3c4f0f%3A0x0!2zSm9zw6kgQmF0bGxlIDU4MywgVHJpbmlkYWQ!5e0!3m2!1ses!2suy!4v1700000000000!5m2!1ses!2suy"
             loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
