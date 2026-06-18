@@ -728,8 +728,8 @@
     .gi-6 { background: linear-gradient(145deg, #e8d5f5, var(--lav-soft)); }
 
     @media (max-width: 768px) {
-      .galeria-grid { grid-template-columns: 1fr 1fr; }
-      .galeria-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+      .galeria-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; }
+      .galeria-item:nth-child(1) { grid-column: span 1; grid-row: span 1; }
       .galeria-item:nth-child(4) { grid-column: span 1; }
       .galeria { padding: 40px 0; }
       .contacto { padding: 40px 0; }
@@ -1253,16 +1253,16 @@
     </div>
     <div class="galeria-grid">
       <div class="galeria-item gi-2 reveal">
-        <img src="assets/images/luz-led.png" alt="Tratamiento con luz LED en Lavande" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+        <img class="lightbox-trigger" src="assets/images/luz-led.png" alt="Tratamiento con luz LED en Lavande" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;cursor:pointer;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
       <div class="galeria-item gi-3 reveal">
-        <img src="assets/images/camilla.png" alt="Camilla y equipamiento del consultorio" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+        <img class="lightbox-trigger" src="assets/images/camilla.png" alt="Camilla y equipamiento del consultorio" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;cursor:pointer;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
       <div class="galeria-item gi-4 reveal">
-        <img src="assets/images/bandeja-preparada.png" alt="Bandeja preparada para tratamiento en Lavande" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+        <img class="lightbox-trigger" src="assets/images/bandeja-preparada.png" alt="Bandeja preparada para tratamiento en Lavande" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;cursor:pointer;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
       <div class="galeria-item gi-6 reveal">
-        <img src="assets/images/instrumental.png" alt="Instrumental y productos del consultorio" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+        <img class="lightbox-trigger" src="assets/images/instrumental.png" alt="Instrumental y productos del consultorio" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;cursor:pointer;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
     </div>
     <p style="text-align:center; margin-top:32px; font-size:13px; color: var(--warm-grey); letter-spacing:0.1em;">
