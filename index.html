@@ -334,12 +334,12 @@
       bottom: 32px;
       right: -20px;
       z-index: 2;
-      padding: 16px 20px;
-      border-radius: 20px;
+      padding: 10px 16px;
+      border-radius: 14px;
       background: rgba(255,255,255,0.85);
       backdrop-filter: blur(12px);
       border: 1px solid rgba(255,255,255,0.9);
-      box-shadow: 0 8px 32px var(--shadow-lav);
+      box-shadow: 0 4px 16px var(--shadow-lav);
       display: flex;
       flex-direction: column;
       gap: 2px;
@@ -352,7 +352,7 @@
       line-height: 1;
     }
     .hero-badge-txt {
-      font-size: 10px;
+      font-size: 9px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--warm-grey);
@@ -363,15 +363,15 @@
       top: 40px;
       left: -24px;
       z-index: 2;
-      padding: 12px 18px;
-      border-radius: 14px;
+      padding: 8px 14px;
+      border-radius: 10px;
       background: var(--lav-btn);
       color: var(--white);
-      font-size: 11px;
+      font-size: 9px;
       font-weight: 600;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      box-shadow: 0 8px 24px rgba(107,78,155,0.3);
+      box-shadow: 0 4px 12px rgba(107,78,155,0.2);
       animation: floatChip 5s ease-in-out infinite;
     }
     @keyframes floatChip { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
@@ -392,8 +392,8 @@
       .hero-float-chip { left: 0; }
       .hero-title { font-size: clamp(28px, 8vw, 68px); white-space: nowrap; }
     }
-    @media (max-width: 480px) {
-      .hero-title { font-size: 28px; white-space: nowrap; }
+    @media (max-width: 600px) {
+      .hero-title { font-size: clamp(24px, 9vw, 42px); white-space: nowrap; letter-spacing: -0.02em; }
     }
 
     /* ─── SECTION HEADERS ─── */
