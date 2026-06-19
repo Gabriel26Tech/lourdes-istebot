@@ -527,13 +527,15 @@
     }
 
     /* ─── SERVICIOS ─── */
-    .servicios { padding: 80px 0; overflow: visible; }
+    .servicios { padding: 80px 0 100px; overflow: visible; }
+    .servicios .container { overflow: visible; }
     .servicios-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 24px;
       align-items: stretch;
       overflow: visible;
+      padding-bottom: 16px;
     }
     .service-card {
       border-radius: 28px;
@@ -545,7 +547,7 @@
       transition: transform 0.3s, box-shadow 0.3s;
       cursor: default;
     }
-    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(107,78,155,0.14); }
+    .service-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(107,78,155,0.14); }
     .service-card.glass { background: rgba(255,255,255,0.55); }
     .service-card.tinted { background: linear-gradient(145deg, rgba(232,224,240,0.5), rgba(255,255,255,0.4)); }
     .service-icon {
